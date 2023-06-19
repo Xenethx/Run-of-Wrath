@@ -1,0 +1,183 @@
+
+
+/*-------Body-------*/
+
+
+body {
+    background-color: rgb(32, 32, 32);
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url(images/stars-1654074_1280.jpg);
+    background-size: cover;
+    
+}
+ 
+ * {
+  margin: 0;
+  padding-top: 0;
+}
+
+/*-------Navbar-------*/
+
+
+nav {
+  width: 100%;
+  height: 60px;
+  background-color: white;
+}
+
+nav p {
+  font-family: 'Times New Roman', Times, serif;
+  color: #222;
+  font-size: 24px;
+  line-height: 55px;
+  float: left;
+  padding: 0px 20px;
+}
+
+nav ul {
+  float: right;
+  padding: 0px 40px;
+
+}
+
+nav ul li {
+  float: left;
+  list-style: none;
+  position: relative;
+}
+
+nav ul li a {
+  display: block;
+  font-family: 'Times New Roman', Times, serif;
+  color: #222;
+  font-size: 14px;
+  padding: 22px 14px;
+  text-decoration: none;
+}
+
+
+nav ul li ul {
+  display: none;
+  position: absolute;
+  background-color: white;
+  padding: 10px;
+  border-radius: 0px 0px 4px 4px;
+}
+
+nav ul li:hover ul {
+  display: block;
+}
+
+nav ul li ul li {
+  border-radius: 8px;
+}
+
+
+nav ul li ul li a {
+  padding: 8px 14px;
+}
+
+nav ul li ul li a:hover {
+  background-color: #f3f3f3;
+  
+}
+
+
+/*-------Text-------*/
+
+
+h1 {
+  color: rgba(255,255,255,255);
+}
+
+h2 {
+  color: rgba(255,255,255,255);
+}
+
+h3 {
+  color: rgba(136,36,48,255);
+}
+
+p {
+  color: rgba(255,255,255,255);
+}
+
+
+
+/*-------Gallery-------*/
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  padding: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+
+/*-------Home Page-------*/
+
+
+.hometitle {
+  text-align: center;
+  padding: 30px;
+  color: white;
+}
+
+
+/*-------About-------*/
+
+
+.column-container {
+  display: flex;
+  padding: 20px
+}
+
+.column {
+  flex: 1;
+  padding: 20px;
+}
+
+.column:nth-child(odd) {
+  background-color: #807e7e; 
+}
+
+.column:nth-child(even) {
+  background-color: #5a5858; 
+}
+
+.column img {
+  max-width: 100%;
+  height: auto;
+  padding-bottom: 10px;
+}
+
+/*-------Contact-------*/
+
+.contact {
+  position: relative;
+  width: 480px;
+  height: 300px;
+  margin: 100px auto;
+}
+
+.contact .box {
+  position: relative;
+  width: 435px;
+  height: 400px;
+  background-color: rgba(26,29,34,255);
+  
+  margin: 15px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.contact .box .content {
+  position: relative;
+  text-align: center;
+  padding: 20px;
+  }
